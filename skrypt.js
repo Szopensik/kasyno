@@ -54,7 +54,7 @@ function littlewin() {
 async function gra() {
     kasa=kasa-50
      konto.textContent="Stan konta: " + kasa + "$"
-  if (pitty<5) {
+  if (pitty<10) {
     przycisk.disabled = true;
  
   for (let i = 0; i < divy.length; i++) {
@@ -73,8 +73,9 @@ async function gra() {
     }
     
     divy[i].classList.remove("spin");
-    pitty=pitty+1
+    
   }
+  pitty=pitty+1
   przycisk.disabled = false;
   }
 
@@ -115,6 +116,7 @@ let wynik = divy.every(val =>
 if (wynik) {
   if (div1.style.backgroundImage.includes("casino.png")) {
     console.log("big win");
+     await sleep(200);
     winsound();
     kasa += 5000;
     wingif()
