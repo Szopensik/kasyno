@@ -1,55 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandyta</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav>
-    
-    <div>
-        <a href="index.html" class="logo"><img src="imagefajny.png" alt="Logo FB kasyna"></a>
-    </div>
-    
+    <a href="index.html" class="logo">
+        <img src="imagefajny.png" alt="Logo kasyna">
+    </a>
+
     <div class="prawe">
-<button class="doladuj">Doładuj konto</button>
-    <p class="stan"></p>
-
+        <button class="doladuj">Doładuj konto</button>
+        <p class="stan"></p>
     </div>
-    
-
-    
 </nav>
-<img id="winGif" src="mops.gif" class="gifywygrana">
 
-<img id="wingifcoin" src="coin.gif" class="gifywygrana">
+<main class="game">
 
+    <img id="winGif" src="mops.gif" class="gifywygrana">
+    <img id="wingifcoin" src="coin.gif" class="gifywygrana">
 
-<div class="ekran">
-    <div class="s1">
-
+    <div class="ekran">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
     </div>
-    <div class="s2">
 
-    </div>
-    <div class="s3">
+    <button class="play">Zakręć</button>
 
-    </div>
-</div>
-<button class="play">
-    <p>Zakręć</p>
-</button>
+</main>
 
-
-
-
-
-
-
-
-
-    <script src="skrypt.js"></script>
+<script src="skrypt.js"></script>
 </body>
 </html>
